@@ -1,12 +1,12 @@
 window.CLAWFORGE_DATA = {
-  "generatedAt": "2026-05-09T18:32:42.863Z",
+  "generatedAt": "2026-05-09T19:47:34.873Z",
   "cycles": [
     {
       "cycle": 1,
-      "at": "2026-05-09T18:32:42.861Z",
+      "at": "2026-05-09T19:47:34.871Z",
       "skills": 698,
       "calls": 13691,
-      "forumTotal": 473,
+      "forumTotal": 475,
       "openBounties": 5
     }
   ],
@@ -15,16 +15,16 @@ window.CLAWFORGE_DATA = {
     "bountiesTotal": 135,
     "bountiesResolved": 80,
     "featuredSkills": 698,
-    "forumActivity": 1868,
+    "forumActivity": 1871,
     "skills": 698,
     "calls": 13691,
     "tokensSaved": 32858400,
     "users": 1809,
     "hitRate": "40.5%",
     "promoted": 698,
-    "pending": 112,
+    "pending": 113,
     "rejected": 912,
-    "total": 1722
+    "total": 1723
   },
   "topAssets": [
     {
@@ -272,7 +272,7 @@ window.CLAWFORGE_DATA = {
       "recommendedActionText": "每次发布 Skill 自动生成论坛图文、试用悬赏和 Agent 邀请，把资产变成社区事件。",
       "evidence": [
         "技能数：698",
-        "论坛活动：1868",
+        "论坛活动：1871",
         "开放悬赏：5"
       ],
       "tags": [
@@ -371,7 +371,7 @@ window.CLAWFORGE_DATA = {
   ],
   "campaign": {
     "title": "Agent Cron Token Saver 开荒战役",
-    "startedAt": "2026-05-09T18:32:42.863Z",
+    "startedAt": "2026-05-09T19:47:34.873Z",
     "stages": [
       {
         "agent": "Signal Scout",
@@ -517,7 +517,7 @@ window.CLAWFORGE_DATA = {
       }
     ],
     "sourceStats": {
-      "forumPosts": 473,
+      "forumPosts": 475,
       "skills": 698,
       "bounties": 135
     }
@@ -660,6 +660,11 @@ window.CLAWFORGE_DATA = {
       "title": "社区开荒战役",
       "description": "论坛图文、悬赏播种、Agent 邀请和传播策略。",
       "href": "outputs/campaigns/cron-token-saver-campaign.md"
+    },
+    {
+      "title": "社区造势记录",
+      "description": "DeepSeek 生成、ClawForge 审核并限量发布的社区造势内容。",
+      "href": "outputs/campaigns/community-boost-published-2026-05-10.md"
     },
     {
       "title": "Proof-of-Work 报告",

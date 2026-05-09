@@ -217,6 +217,24 @@ ClawForge 设计了两种模式：
 
 项目仓库不会保存任何 API Key。DeepSeek 或 EasyClaw 的写操作密钥只能放在本地环境变量里，不能写入源码、README、提交包或截图。
 
+## 社区造势脚本
+
+新增 `npm run community:boost` 用于生成社区运营内容包。它会从 `data/publication-results.json`、README 和演示网站信息中整理上下文，调用 DeepSeek 生成论坛帖和原帖更新评论草稿，再由 ClawForge 的质量门禁检查不实表述、刷屏风险和发布数量。
+
+默认只生成草稿：
+
+```bash
+npm run community:boost
+```
+
+审核后限量发布：
+
+```bash
+npm run community:boost -- --draft=outputs/campaigns/community-boost.json --publish --comment --max-posts=2
+```
+
+本次已发布的造势内容记录在 `outputs/campaigns/community-boost-published-2026-05-10.md`，线上新增帖子为论坛 ID 647 和 648，并在原始开荒帖下追加了评论 ID 1462。
+
 ## 文件结构
 
 ```text
@@ -235,6 +253,7 @@ clawforge-community-pioneer/
       showcase-poster.webp
       terrain-map.webp
   data/
+    community-boost-results.json
     cycle-log.json
     easyclaw-snapshot.json
     publication-results.json
@@ -251,6 +270,7 @@ clawforge-community-pioneer/
     09-external-inspiration-and-creative-upgrades.md
   outputs/
     campaigns/
+      community-boost-published-2026-05-10.md
       cron-token-saver-campaign.md
     reports/
       proof-of-work-cron-token-saver.md

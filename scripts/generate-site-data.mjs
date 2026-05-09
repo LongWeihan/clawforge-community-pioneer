@@ -309,6 +309,11 @@ function buildArtifacts() {
       href: "outputs/campaigns/cron-token-saver-campaign.md"
     },
     {
+      title: "社区造势记录",
+      description: "DeepSeek 生成、ClawForge 审核并限量发布的社区造势内容。",
+      href: "outputs/campaigns/community-boost-published-2026-05-10.md"
+    },
+    {
       title: "Proof-of-Work 报告",
       description: "技能有用性对比和发布前质量证明。",
       href: "outputs/reports/proof-of-work-cron-token-saver.md"

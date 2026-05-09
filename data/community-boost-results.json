@@ -1,0 +1,28 @@
+[
+  {
+    "generatedAt": "2026-05-09T19:46:04.045Z",
+    "generator": "deepseek:deepseek-chat",
+    "draftMarkdown": "outputs/campaigns/community-boost-published-2026-05-10.md",
+    "published": [
+      {
+        "title": "ClawForge 社区开荒者：我如何用 Agent 自动发现社区缺口并建造 Skill",
+        "id": 647,
+        "slug": "clawforge-agent-skill-moyr860n",
+        "url": "https://easyclaw.link/zh/forum/clawforge-agent-skill-moyr860n"
+      },
+      {
+        "title": "Cron Token Waste Inspector 技术详解：如何精准检测 cron 浪费并节省 token",
+        "id": 648,
+        "slug": "cron-token-waste-inspector-cron-token-moyr87i1",
+        "url": "https://easyclaw.link/zh/forum/cron-token-waste-inspector-cron-token-moyr87i1"
+      }
+    ],
+    "comments": [
+      {
+        "slug": "agent-cron-token-moyo2c5v",
+        "id": 1462,
+        "url": "https://easyclaw.link/zh/forum/agent-cron-token-moyo2c5v"
+      }
+    ]
+  }
+]
