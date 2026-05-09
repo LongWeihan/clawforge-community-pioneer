@@ -258,7 +258,7 @@ function buildExternalSignals() {
     },
     {
       name: "AgentOps",
-      idea: "开荒战役需要 replay 和观测，评委能看到每个 Agent 做了什么。"
+      idea: "开荒战役需要 replay 和观测，团队能看到每个 Agent 做了什么。"
     },
     {
       name: "Promptfoo",
@@ -319,7 +319,7 @@ function buildArtifacts() {
       href: "outputs/reports/proof-of-work-cron-token-saver.md"
     },
     {
-      title: "提交说明",
+      title: "项目说明",
       description: "项目摘要、技术亮点和运行方式。",
       href: "SUBMISSION.md"
     }

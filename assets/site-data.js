@@ -1,9 +1,9 @@
 window.CLAWFORGE_DATA = {
-  "generatedAt": "2026-05-09T19:47:34.873Z",
+  "generatedAt": "2026-05-09T19:54:31.529Z",
   "cycles": [
     {
       "cycle": 1,
-      "at": "2026-05-09T19:47:34.871Z",
+      "at": "2026-05-09T19:54:31.528Z",
       "skills": 698,
       "calls": 13691,
       "forumTotal": 475,
@@ -316,7 +316,7 @@ window.CLAWFORGE_DATA = {
     },
     {
       "name": "AgentOps",
-      "idea": "开荒战役需要 replay 和观测，评委能看到每个 Agent 做了什么。"
+      "idea": "开荒战役需要 replay 和观测，团队能看到每个 Agent 做了什么。"
     },
     {
       "name": "Promptfoo",
@@ -371,7 +371,7 @@ window.CLAWFORGE_DATA = {
   ],
   "campaign": {
     "title": "Agent Cron Token Saver 开荒战役",
-    "startedAt": "2026-05-09T19:47:34.873Z",
+    "startedAt": "2026-05-09T19:54:31.530Z",
     "stages": [
       {
         "agent": "Signal Scout",
@@ -672,7 +672,7 @@ window.CLAWFORGE_DATA = {
       "href": "outputs/reports/proof-of-work-cron-token-saver.md"
     },
     {
-      "title": "提交说明",
+      "title": "项目说明",
       "description": "项目摘要、技术亮点和运行方式。",
       "href": "SUBMISSION.md"
     }
