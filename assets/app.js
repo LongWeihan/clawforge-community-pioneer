@@ -2,6 +2,39 @@ const data = window.CLAWFORGE_DATA;
 
 const $ = (selector) => document.querySelector(selector);
 
+const architectureNodes = [
+  {
+    title: "Signal Scout",
+    role: "嗅探需求",
+    summary: "抓取技能市场、论坛、悬赏和外部 Agent 社区，把早期社区的真实缺口变成可行动信号。",
+    outputs: ["热门技能与冷门荒地", "论坛经验与高频抱怨", "可传播选题"]
+  },
+  {
+    title: "Terrain Cartographer",
+    role: "绘制地形",
+    summary: "把信号拆成荒地、矿区、拥挤区、绿洲、断桥，让评委一眼看到社区下一步该往哪里建。",
+    outputs: ["可交互地形图", "机会优先级", "证据链"]
+  },
+  {
+    title: "Skill Forge",
+    role: "铸造技能",
+    summary: "把高价值缺口转成可提交 Skill，补齐描述、输入输出、使用场景和失败边界。",
+    outputs: ["Skill 草稿", "示例任务", "发布标签"]
+  },
+  {
+    title: "Proof Lab",
+    role: "证明有用",
+    summary: "发布前跑 baseline 对比、质量评分、token 节省估算和密钥检查，让作品不是空喊概念。",
+    outputs: ["Proof-of-Work", "质量差值", "Secret guard"]
+  },
+  {
+    title: "Launch Swarm",
+    role: "扩散增长",
+    summary: "把一个 Skill 包装成论坛图文、试用悬赏、Agent 联盟邀请和后续反馈任务。",
+    outputs: ["论坛宣传", "悬赏播种", "Campaign Replay"]
+  }
+];
+
 function formatNumber(value) {
   if (value === undefined || value === null) return "0";
   return Number(value).toLocaleString("zh-CN");
@@ -110,6 +143,36 @@ function renderExternalSignals() {
       <span>${signal.idea}</span>
     </li>
   `).join("");
+}
+
+function renderArchitecture() {
+  const nodes = $("#architectureNodes");
+  const detail = $("#architectureDetail");
+
+  function selectNode(index) {
+    const node = architectureNodes[index];
+    [...nodes.children].forEach((item, idx) => item.classList.toggle("active", idx === index));
+    detail.innerHTML = `
+      <p class="eyebrow">${node.title} · ${node.role}</p>
+      <h3>${node.summary}</h3>
+      <ul>${node.outputs.map(output => `<li>${output}</li>`).join("")}</ul>
+      <div class="tag-row">
+        <span class="tag">agentic workflow</span>
+        <span class="tag">quality gate</span>
+        <span class="tag">community flywheel</span>
+      </div>
+    `;
+  }
+
+  nodes.innerHTML = architectureNodes.map((node, index) => `
+    <button class="arch-node" type="button" aria-label="${node.title}：${node.role}">
+      <span>${String(index + 1).padStart(2, "0")}</span>
+      <strong>${node.title}</strong>
+      <small>${node.role}</small>
+    </button>
+  `).join("");
+  [...nodes.children].forEach((node, index) => node.addEventListener("click", () => selectNode(index)));
+  selectNode(0);
 }
 
 function renderCampaign() {
@@ -231,6 +294,7 @@ renderTerrain();
 renderBars();
 renderSignalMix();
 renderExternalSignals();
+renderArchitecture();
 renderCampaign();
 renderProof();
 renderLaunch();

@@ -12,12 +12,18 @@
       <section class="hero" id="top">
         <div class="hero-backdrop" aria-hidden="true"></div>
         <div class="hero-copy">
-          <p class="eyebrow">EasyClaw Hackathon · Multi-Agent Community Builder</p>
-          <h1>ClawForge 社区开荒者</h1>
-          <p class="hero-subtitle">一支帮早期 Agent 社区自动开荒的数字团队：发现需求，证明技能有用，发布内容，播种悬赏，连接 Agent，再把反馈炼成下一轮增长。</p>
+          <p class="eyebrow">EasyClaw Hackathon · Autonomous Community Pioneer</p>
+          <h1>Agent 开荒引擎</h1>
+          <p class="hero-subtitle">ClawForge 不是一个看板，而是一台早期社区增长引擎：它嗅探缺口，铸造 Skill，跑 Proof-of-Work，发布论坛故事，播种悬赏，再把反馈卷回下一轮开荒。</p>
           <div class="hero-actions">
-            <a href="#terrain" class="button primary">查看社区地形</a>
-            <a href="#campaign" class="button secondary">播放开荒战役</a>
+            <a href="#architecture" class="button primary">看 AI 架构</a>
+            <a href="#terrain" class="button secondary">探索社区地形</a>
+            <a href="#launch" class="button secondary">查看已发布战果</a>
+          </div>
+          <div class="hero-proof">
+            <span>Skill #1791 submitted</span>
+            <span>Forum #646 published</span>
+            <span>Bounties #240-242 live</span>
           </div>
         </div>
         <aside class="command-board" aria-label="平台快照">
@@ -27,6 +33,17 @@
           </div>
           <div class="metric-grid" id="heroMetrics"></div>
         </aside>
+      </section>
+
+      <section class="showcase-band" aria-label="项目宣传视觉">
+        <div class="showcase-copy">
+          <p class="eyebrow">The Pitch</p>
+          <h2>从“发一个技能”升级为“开一片生态”</h2>
+          <p>比赛里最性感的部分不是单个 Skill，而是让平台早期供给自动滚起来：需求发现、技能生产、质量证明、社区传播、悬赏反馈，形成一个能连续复利的增长回路。</p>
+        </div>
+        <figure class="showcase-poster">
+          <img src="assets/images/showcase-poster.webp" alt="ClawForge 自动开荒引擎宣传图">
+        </figure>
       </section>
 
       <section class="section strip" id="terrain">
@@ -62,6 +79,37 @@
             <h3>外部 Agent 生态灵感</h3>
             <ul id="externalSignals" class="signal-list"></ul>
           </article>
+        </div>
+      </section>
+
+      <section class="section architecture-section" id="architecture">
+        <div class="section-head">
+          <p class="eyebrow">AI Architecture</p>
+          <h2>一套会自我进化的社区开荒流水线</h2>
+          <p>它把 EasyClaw 的市场、论坛、悬赏和外部 Agent 生态变成连续输入，交给一组分工 Agent 处理，最后输出可验证、可发布、可传播的社区资产。</p>
+        </div>
+        <div class="architecture-layout">
+          <figure class="architecture-visual">
+            <img src="assets/images/architecture-lab.webp" alt="ClawForge 多 Agent AI 架构视觉图">
+          </figure>
+          <div class="architecture-diagram" aria-label="ClawForge AI 架构图">
+            <div class="arch-lane arch-inputs">
+              <span class="arch-label">Inputs</span>
+              <strong>Market · Forum · Bounties · GitHub</strong>
+              <small>公开信号、缺口、重复度、传播素材</small>
+            </div>
+            <div class="arch-core">
+              <span>ClawForge Orchestrator</span>
+              <strong>规划 · 分派 · 质检 · 回放</strong>
+            </div>
+            <div class="arch-nodes" id="architectureNodes"></div>
+            <div class="arch-lane arch-outputs">
+              <span class="arch-label">Outputs</span>
+              <strong>Skill · Story · Bounty · Replay</strong>
+              <small>可提交资产、论坛图文、试用任务、演示证据</small>
+            </div>
+          </div>
+          <article class="detail-panel architecture-detail" id="architectureDetail"></article>
         </div>
       </section>
 
