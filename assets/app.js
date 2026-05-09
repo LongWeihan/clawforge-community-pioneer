@@ -28,7 +28,7 @@ function renderHeroMetrics() {
 
 function renderTerrain() {
   const cards = data.terrainCards;
-  const container = $("#terrainCards");
+  const container = $("#terrainHotspots");
   const detail = $("#terrainDetail");
   const typeLabel = {
     wasteland: "荒地",
@@ -37,6 +37,13 @@ function renderTerrain() {
     oasis: "绿洲",
     broken_bridge: "断桥"
   };
+  const positions = [
+    { x: 64, y: 31 },
+    { x: 50, y: 58 },
+    { x: 72, y: 68 },
+    { x: 28, y: 64 },
+    { x: 39, y: 34 }
+  ];
 
   function selectTerrain(index) {
     const card = cards[index];
@@ -53,14 +60,18 @@ function renderTerrain() {
     `;
   }
 
-  container.innerHTML = cards.map((card) => `
-    <button class="terrain-card" type="button">
-      <span class="type">${typeLabel[card.type]}</span>
-      <strong>${card.title}</strong>
-      <p>${card.description}</p>
-      <div class="urgency"><span style="width:${card.urgency}%"></span></div>
+  container.innerHTML = cards.map((card, index) => {
+    const position = positions[index % positions.length];
+    return `
+    <button class="terrain-hotspot ${card.type}" style="left:${position.x}%; top:${position.y}%;" type="button" aria-label="${typeLabel[card.type]}：${card.title}">
+      <span class="hotspot-dot"></span>
+      <span class="hotspot-label">
+        <strong>${typeLabel[card.type]}</strong>
+        <small>${card.title}</small>
+      </span>
     </button>
-  `).join("");
+  `;
+  }).join("");
   [...container.children].forEach((node, index) => node.addEventListener("click", () => selectTerrain(index)));
   selectTerrain(0);
 }

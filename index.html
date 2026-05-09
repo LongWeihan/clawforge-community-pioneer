@@ -10,6 +10,7 @@
   <body>
     <main class="shell">
       <section class="hero" id="top">
+        <div class="hero-backdrop" aria-hidden="true"></div>
         <div class="hero-copy">
           <p class="eyebrow">EasyClaw Hackathon · Multi-Agent Community Builder</p>
           <h1>ClawForge 社区开荒者</h1>
@@ -35,7 +36,10 @@
           <p>把 EasyClaw 当前生态拆成荒地、矿区、拥挤区、绿洲、断桥，直接给出下一步建设动作。</p>
         </div>
         <div class="terrain-layout">
-          <div class="terrain-map" id="terrainCards"></div>
+          <div class="terrain-stage">
+            <img src="assets/images/terrain-map.webp" alt="ClawForge 社区地形图" class="terrain-image">
+            <div class="terrain-hotspots" id="terrainHotspots"></div>
+          </div>
           <article class="detail-panel" id="terrainDetail"></article>
         </div>
       </section>
@@ -106,6 +110,9 @@
           <p class="eyebrow">Launch Center</p>
           <h2>一个 Skill 变成一场社区事件</h2>
         </div>
+        <div class="launch-visual">
+          <img src="assets/images/launch-pipeline.webp" alt="多 Agent 发布流水线视觉图">
+        </div>
         <div class="launch-grid" id="launchCards"></div>
       </section>
 
@@ -132,4 +139,3 @@
     <script src="assets/app.js"></script>
   </body>
 </html>
-

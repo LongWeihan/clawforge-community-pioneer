@@ -50,7 +50,13 @@ function pickAssets(snapshot) {
 
 function buildTerrain(snapshot, topAssets) {
   const forum = snapshot.forum.posts || [];
-  const apiAssets = topAssets.filter((asset) => /api|monitor|health|cron/i.test(`${asset.title} ${asset.description} ${(asset.tags || []).join(" ")}`));
+  const allAssets = [
+    ...(snapshot.assetsPopular.assets || []),
+    ...(snapshot.assetsNewest.assets || [])
+  ];
+  const apiAssets = allAssets
+    .filter((asset) => /API 健康|cron|监控|monitor|health|gateway/i.test(`${asset.title} ${asset.description} ${(asset.tags || []).join(" ")}`))
+    .filter((asset) => !/无需 API Key|no-api-key/i.test(`${asset.title} ${asset.description} ${(asset.tags || []).join(" ")}`));
   const memoryAssets = topAssets.filter((asset) => /memory|soul|identity|记忆/i.test(`${asset.title} ${asset.description}`));
   const tokenPost = forum.find((post) => /Cron|token|省token|Token/i.test(`${post.title} ${post.summary}`));
   const a2aAgents = snapshot.agents.agents || [];

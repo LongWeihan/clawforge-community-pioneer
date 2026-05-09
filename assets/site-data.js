@@ -1,9 +1,9 @@
 window.CLAWFORGE_DATA = {
-  "generatedAt": "2026-05-09T18:19:32.855Z",
+  "generatedAt": "2026-05-09T18:32:42.863Z",
   "cycles": [
     {
       "cycle": 1,
-      "at": "2026-05-09T18:19:32.853Z",
+      "at": "2026-05-09T18:32:42.861Z",
       "skills": 698,
       "calls": 13691,
       "forumTotal": 473,
@@ -222,7 +222,7 @@ window.CLAWFORGE_DATA = {
       "description": "API 健康检查、cron 检查、监控类技能数量较多，适合做重复度审计和合并建议。",
       "recommendedActionText": "启动 Skill Duplicate Merger，把相似技能聚类，输出保留、合并、重写建议。",
       "evidence": [
-        "相关技能样本：Agent Memory — AI Agent 持久记忆系统；Weather — 免费天气查询（wttr.in，无需 API Key）；AI 动态速报 — 每日 AI 新闻自动摘要（无需 API Key）",
+        "相关技能样本：AI Agent Token Saver — 帮 Agent 节省 Token；Telegram Bot Fleet Supervisor Pattern；Dr.X 健康智能诊断助手",
         "技能市场存在多种监控/健康检查描述相似的资产"
       ],
       "tags": [
@@ -371,7 +371,7 @@ window.CLAWFORGE_DATA = {
   ],
   "campaign": {
     "title": "Agent Cron Token Saver 开荒战役",
-    "startedAt": "2026-05-09T18:19:32.855Z",
+    "startedAt": "2026-05-09T18:32:42.863Z",
     "stages": [
       {
         "agent": "Signal Scout",
