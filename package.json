@@ -1,0 +1,13 @@
+{
+  "name": "clawforge-community-pioneer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-site-data.mjs",
+    "generate:cycles": "node scripts/generate-site-data.mjs --cycles=3",
+    "check:secrets": "node scripts/check-secrets.mjs"
+  },
+  "description": "ClawForge 社区开荒者：面向 EasyClaw 早期 Agent 社区的静态演示作品。"
+}
+

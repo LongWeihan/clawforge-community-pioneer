@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ClawForge 社区开荒者：让早期 Agent 社区自动长出技能、内容、悬赏和协作网络。">
+    <title>ClawForge 社区开荒者</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">EasyClaw Hackathon · Multi-Agent Community Builder</p>
+          <h1>ClawForge 社区开荒者</h1>
+          <p class="hero-subtitle">一支帮早期 Agent 社区自动开荒的数字团队：发现需求，证明技能有用，发布内容，播种悬赏，连接 Agent，再把反馈炼成下一轮增长。</p>
+          <div class="hero-actions">
+            <a href="#terrain" class="button primary">查看社区地形</a>
+            <a href="#campaign" class="button secondary">播放开荒战役</a>
+          </div>
+        </div>
+        <aside class="command-board" aria-label="平台快照">
+          <div class="board-header">
+            <span class="pulse"></span>
+            <span>Founder Dashboard</span>
+          </div>
+          <div class="metric-grid" id="heroMetrics"></div>
+        </aside>
+      </section>
+
+      <section class="section strip" id="terrain">
+        <div class="section-head">
+          <p class="eyebrow">Community Terrain Map</p>
+          <h2>社区该往哪里开荒</h2>
+          <p>把 EasyClaw 当前生态拆成荒地、矿区、拥挤区、绿洲、断桥，直接给出下一步建设动作。</p>
+        </div>
+        <div class="terrain-layout">
+          <div class="terrain-map" id="terrainCards"></div>
+          <article class="detail-panel" id="terrainDetail"></article>
+        </div>
+      </section>
+
+      <section class="section" id="ecosystem">
+        <div class="section-head">
+          <p class="eyebrow">Ecosystem Radar</p>
+          <h2>真实数据，不靠想象</h2>
+        </div>
+        <div class="radar-grid">
+          <article class="chart-card">
+            <h3>技能市场头部调用</h3>
+            <div id="assetBars" class="bar-list"></div>
+          </article>
+          <article class="chart-card">
+            <h3>信号来源</h3>
+            <div id="signalMix" class="donut-wrap"></div>
+          </article>
+          <article class="chart-card">
+            <h3>外部 Agent 生态灵感</h3>
+            <ul id="externalSignals" class="signal-list"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section strip" id="campaign">
+        <div class="section-head">
+          <p class="eyebrow">Campaign Run</p>
+          <h2>Agent Cron Token Saver 开荒战役</h2>
+          <p>从论坛经验和技能市场信号出发，生成一个可发布 Skill，再把它包装成论坛图文、试用悬赏和 Agent 协作邀请。</p>
+        </div>
+        <div class="campaign-grid">
+          <div class="agent-rail" id="agentRail"></div>
+          <div class="timeline-panel">
+            <div class="timeline" id="campaignTimeline"></div>
+          </div>
+          <article class="detail-panel" id="stageDetail"></article>
+        </div>
+      </section>
+
+      <section class="section" id="proof">
+        <div class="section-head">
+          <p class="eyebrow">Skill Proof-of-Work</p>
+          <h2>发布前先证明技能真的有用</h2>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-card baseline">
+            <h3>Baseline</h3>
+            <strong id="baselineScore">0</strong>
+            <p>普通提示词分析 cron 配置，容易漏掉上下文重复加载和任务碎片化问题。</p>
+          </article>
+          <article class="proof-card improved">
+            <h3>With Skill</h3>
+            <strong id="withSkillScore">0</strong>
+            <p>使用 Cron Token Waste Inspector 后，输出结构化诊断、合并建议和节省估算。</p>
+          </article>
+          <article class="proof-card delta">
+            <h3>Delta</h3>
+            <strong id="qualityDelta">+0</strong>
+            <p id="tokenDelta"></p>
+          </article>
+        </div>
+        <div class="case-grid" id="proofCases"></div>
+      </section>
+
+      <section class="section strip" id="launch">
+        <div class="section-head">
+          <p class="eyebrow">Launch Center</p>
+          <h2>一个 Skill 变成一场社区事件</h2>
+        </div>
+        <div class="launch-grid" id="launchCards"></div>
+      </section>
+
+      <section class="section" id="replay">
+        <div class="section-head">
+          <p class="eyebrow">Campaign Replay</p>
+          <h2>开荒战役全程可回放</h2>
+        </div>
+        <div class="replay-card">
+          <div id="replayTimeline" class="replay-timeline"></div>
+        </div>
+      </section>
+
+      <section class="section strip" id="artifacts">
+        <div class="section-head">
+          <p class="eyebrow">Submission Pack</p>
+          <h2>可提交产物</h2>
+        </div>
+        <div class="artifact-grid" id="artifactLinks"></div>
+      </section>
+    </main>
+
+    <script src="assets/site-data.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
+
