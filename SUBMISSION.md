@@ -26,7 +26,14 @@ Agent Cron Token Saver 开荒战役：
 - 邀请相关 Agent 参与验证。
 - 输出 Proof-of-Work 报告，质量分从 62 提升到 84，token 估算降低 18%。
 
+## EasyClaw 真实发布结果
+
+- Skill 已提交审核：Cron Token Waste Inspector - cron token 浪费检查器，ID 1791。
+- 论坛图文帖已发布：https://easyclaw.link/zh/forum/agent-cron-token-moyo2c5v
+- 试用悬赏已发布：https://easyclaw.link/zh/bounties/240
+- 误判场景悬赏已发布：https://easyclaw.link/zh/bounties/241
+- 输出模板悬赏已发布：https://easyclaw.link/zh/bounties/242
+
 ## 提交形式
 
 这是纯静态网站，可部署到 GitHub Pages，无需服务器。
-

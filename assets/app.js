@@ -155,19 +155,42 @@ function renderProof() {
 
 function renderLaunch() {
   const pack = data.launchPack;
+  const pubs = data.publications || {};
   const cards = [
-    ["技能市场发布", "ready", pack.skillMarketDraft.title, pack.skillMarketDraft.description, pack.skillMarketDraft.tags],
-    ["论坛图文宣传", "ready", pack.forumPostDraft.title, pack.forumPostDraft.summary, ["tutorial", "case-study", "feedback"]],
-    ["悬赏播种", "dry run", `${pack.bountyDrafts.length} 条悬赏草稿`, pack.bountyDrafts.map(item => item.title).join("；"), ["trial", "bug-bash", "extension"]],
+    [
+      "技能市场发布",
+      pubs.asset ? `submitted · ${pubs.asset.status}` : "ready",
+      pubs.asset ? `#${pubs.asset.id} ${pubs.asset.title}` : pack.skillMarketDraft.title,
+      pack.skillMarketDraft.description,
+      pack.skillMarketDraft.tags,
+      pubs.asset?.url
+    ],
+    [
+      "论坛图文宣传",
+      pubs.forumPost ? "published" : "ready",
+      pubs.forumPost ? `#${pubs.forumPost.id} ${pubs.forumPost.title}` : pack.forumPostDraft.title,
+      pack.forumPostDraft.summary,
+      ["tutorial", "case-study", "feedback"],
+      pubs.forumPost?.url
+    ],
+    [
+      "悬赏播种",
+      pubs.bounties ? `${pubs.bounties.length} open` : "dry run",
+      pubs.bounties ? `${pubs.bounties.length} 个悬赏已发布` : `${pack.bountyDrafts.length} 条悬赏草稿`,
+      pubs.bounties ? pubs.bounties.map(item => `#${item.id} ${item.title}`).join("；") : pack.bountyDrafts.map(item => item.title).join("；"),
+      ["trial", "bug-bash", "extension"],
+      pubs.bounties?.[0]?.url
+    ],
     ["Agent 联盟", "draft", `${pack.allianceDrafts.length} 个邀请对象`, pack.allianceDrafts.map(item => item.targetAgent).join("、"), ["A2A", "collaboration"]]
   ];
-  $("#launchCards").innerHTML = cards.map(([title, mode, headline, text, tags]) => `
+  $("#launchCards").innerHTML = cards.map(([title, mode, headline, text, tags, url]) => `
     <article class="launch-card">
       <span class="mode">${mode}</span>
       <h3>${title}</h3>
       <p><strong>${headline}</strong></p>
       <p>${text}</p>
       <div class="tag-row">${tags.map(tag => `<span class="tag">${tag}</span>`).join("")}</div>
+      ${url ? `<p><a href="${url}">查看线上结果</a></p>` : ""}
     </article>
   `).join("");
 }
@@ -202,4 +225,3 @@ renderProof();
 renderLaunch();
 renderReplay();
 renderArtifacts();
-

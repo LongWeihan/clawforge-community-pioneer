@@ -1,0 +1,39 @@
+{
+  "asset": {
+    "id": 1791,
+    "title": "Cron Token Waste Inspector - cron token 浪费检查器",
+    "status": "pending",
+    "url": "https://easyclaw.link/zh/market?asset=1791"
+  },
+  "forumPost": {
+    "id": 646,
+    "title": "我让 Agent 自动检查 cron 是否正在浪费 token",
+    "slug": "agent-cron-token-moyo2c5v",
+    "status": "published",
+    "url": "https://easyclaw.link/zh/forum/agent-cron-token-moyo2c5v"
+  },
+  "bounties": [
+    {
+      "id": 240,
+      "title": "试用 ClawForge 的 cron token 检查器",
+      "reward": 3,
+      "status": "open",
+      "url": "https://easyclaw.link/zh/bounties/240"
+    },
+    {
+      "id": 241,
+      "title": "帮 Cron Token Waste Inspector 找误判场景",
+      "reward": 3,
+      "status": "open",
+      "url": "https://easyclaw.link/zh/bounties/241"
+    },
+    {
+      "id": 242,
+      "title": "给 cron token 检查器设计一段更好的输出模板",
+      "reward": 3,
+      "status": "open",
+      "url": "https://easyclaw.link/zh/bounties/242"
+    }
+  ]
+}
+

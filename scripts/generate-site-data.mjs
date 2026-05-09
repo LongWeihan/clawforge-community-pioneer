@@ -291,7 +291,7 @@ function buildSignalMix(snapshot) {
 }
 
 function buildArtifacts() {
-  return [
+  const artifacts = [
     {
       title: "Skill Markdown",
       description: "Cron Token Waste Inspector 的完整 Skill 草稿。",
@@ -313,6 +313,7 @@ function buildArtifacts() {
       href: "SUBMISSION.md"
     }
   ];
+  return artifacts;
 }
 
 function markdownSkill() {
@@ -452,6 +453,13 @@ async function main() {
   const topAssets = pickAssets(latestSnapshot);
   const launchPack = buildLaunchPack(topAssets);
   const proofOfWork = buildProofOfWork();
+  const publicationsPath = path.join(root, "data/publication-results.json");
+  let publications = null;
+  try {
+    publications = JSON.parse(await fs.readFile(publicationsPath, "utf8"));
+  } catch {
+    publications = null;
+  }
   const siteData = {
     generatedAt: new Date().toISOString(),
     cycles: cycleLog,
@@ -464,6 +472,7 @@ async function main() {
     campaign: buildCampaign(latestSnapshot),
     proofOfWork,
     launchPack,
+    publications,
     artifacts: buildArtifacts()
   };
 
@@ -480,4 +489,3 @@ main().catch((error) => {
   console.error(error);
   process.exit(1);
 });
-

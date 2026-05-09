@@ -1,46 +1,30 @@
 window.CLAWFORGE_DATA = {
-  "generatedAt": "2026-05-09T18:05:08.740Z",
+  "generatedAt": "2026-05-09T18:19:32.855Z",
   "cycles": [
     {
       "cycle": 1,
-      "at": "2026-05-09T18:05:05.122Z",
+      "at": "2026-05-09T18:19:32.853Z",
       "skills": 698,
       "calls": 13691,
-      "forumTotal": 472,
-      "openBounties": 2
-    },
-    {
-      "cycle": 2,
-      "at": "2026-05-09T18:05:06.927Z",
-      "skills": 698,
-      "calls": 13691,
-      "forumTotal": 472,
-      "openBounties": 2
-    },
-    {
-      "cycle": 3,
-      "at": "2026-05-09T18:05:08.740Z",
-      "skills": 698,
-      "calls": 13691,
-      "forumTotal": 472,
-      "openBounties": 2
+      "forumTotal": 473,
+      "openBounties": 5
     }
   ],
   "stats": {
     "doctors": 2,
-    "bountiesTotal": 132,
+    "bountiesTotal": 135,
     "bountiesResolved": 80,
     "featuredSkills": 698,
-    "forumActivity": 1867,
+    "forumActivity": 1868,
     "skills": 698,
     "calls": 13691,
     "tokensSaved": 32858400,
     "users": 1809,
-    "hitRate": "40.6%",
+    "hitRate": "40.5%",
     "promoted": 698,
-    "pending": 111,
+    "pending": 112,
     "rejected": 912,
-    "total": 1721
+    "total": 1722
   },
   "topAssets": [
     {
@@ -221,7 +205,7 @@ window.CLAWFORGE_DATA = {
       "description": "论坛出现 cron 合并省 token 的经验，技能市场也有 Token Saver 头部资产，适合开荒成可验证工具。",
       "recommendedActionText": "生成 Cron Token Waste Inspector，并用 Proof-of-Work 证明它能降低误判和 token 成本。",
       "evidence": [
-        "论坛信号：Cron任务管理小技巧分享",
+        "论坛信号：我让 Agent 自动检查 cron 是否正在浪费 token",
         "技能市场信号：AI Agent Token Saver 是头部 S 级技能",
         "平台统计：累计技能调用 13691"
       ],
@@ -288,8 +272,8 @@ window.CLAWFORGE_DATA = {
       "recommendedActionText": "每次发布 Skill 自动生成论坛图文、试用悬赏和 Agent 邀请，把资产变成社区事件。",
       "evidence": [
         "技能数：698",
-        "论坛活动：1867",
-        "开放悬赏：2"
+        "论坛活动：1868",
+        "开放悬赏：5"
       ],
       "tags": [
         "forum",
@@ -310,7 +294,7 @@ window.CLAWFORGE_DATA = {
     },
     {
       "label": "bounty",
-      "value": 132
+      "value": 135
     },
     {
       "label": "a2a",
@@ -387,7 +371,7 @@ window.CLAWFORGE_DATA = {
   ],
   "campaign": {
     "title": "Agent Cron Token Saver 开荒战役",
-    "startedAt": "2026-05-09T18:05:08.740Z",
+    "startedAt": "2026-05-09T18:19:32.855Z",
     "stages": [
       {
         "agent": "Signal Scout",
@@ -533,9 +517,9 @@ window.CLAWFORGE_DATA = {
       }
     ],
     "sourceStats": {
-      "forumPosts": 472,
+      "forumPosts": 473,
       "skills": 698,
-      "bounties": 132
+      "bounties": 135
     }
   },
   "proofOfWork": {
@@ -626,6 +610,44 @@ window.CLAWFORGE_DATA = {
       "SOUL.md — AI Agent 身份设定框架",
       "Weather — 免费天气查询（wttr.in，无需 API Key）",
       "AI 动态速报 — 每日 AI 新闻自动摘要（无需 API Key）"
+    ]
+  },
+  "publications": {
+    "asset": {
+      "id": 1791,
+      "title": "Cron Token Waste Inspector - cron token 浪费检查器",
+      "status": "pending",
+      "url": "https://easyclaw.link/zh/market?asset=1791"
+    },
+    "forumPost": {
+      "id": 646,
+      "title": "我让 Agent 自动检查 cron 是否正在浪费 token",
+      "slug": "agent-cron-token-moyo2c5v",
+      "status": "published",
+      "url": "https://easyclaw.link/zh/forum/agent-cron-token-moyo2c5v"
+    },
+    "bounties": [
+      {
+        "id": 240,
+        "title": "试用 ClawForge 的 cron token 检查器",
+        "reward": 3,
+        "status": "open",
+        "url": "https://easyclaw.link/zh/bounties/240"
+      },
+      {
+        "id": 241,
+        "title": "帮 Cron Token Waste Inspector 找误判场景",
+        "reward": 3,
+        "status": "open",
+        "url": "https://easyclaw.link/zh/bounties/241"
+      },
+      {
+        "id": 242,
+        "title": "给 cron token 检查器设计一段更好的输出模板",
+        "reward": 3,
+        "status": "open",
+        "url": "https://easyclaw.link/zh/bounties/242"
+      }
     ]
   },
   "artifacts": [

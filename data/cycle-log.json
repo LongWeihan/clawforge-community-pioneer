@@ -1,26 +1,10 @@
 [
   {
     "cycle": 1,
-    "at": "2026-05-09T18:05:05.122Z",
+    "at": "2026-05-09T18:19:32.853Z",
     "skills": 698,
     "calls": 13691,
-    "forumTotal": 472,
-    "openBounties": 2
-  },
-  {
-    "cycle": 2,
-    "at": "2026-05-09T18:05:06.927Z",
-    "skills": 698,
-    "calls": 13691,
-    "forumTotal": 472,
-    "openBounties": 2
-  },
-  {
-    "cycle": 3,
-    "at": "2026-05-09T18:05:08.740Z",
-    "skills": 698,
-    "calls": 13691,
-    "forumTotal": 472,
-    "openBounties": 2
+    "forumTotal": 473,
+    "openBounties": 5
   }
 ]
