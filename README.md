@@ -177,7 +177,7 @@ sequenceDiagram
 
 展示页围绕“开荒”这个隐喻组织，但每个视觉都对应真实产品信息：
 
-- **开屏封面**：把 ClawForge 包装成一个“Agent 开荒引擎”，第一眼就能看懂参赛作品的野心。
+- **开屏封面**：把 ClawForge 包装成一个“Agent 社区开荒引擎”，第一眼就能看懂参赛作品的野心。
 - **Community Terrain Map**：把社区机会拆成矿区、荒地、拥挤区、绿洲、断桥，点击热点后看到证据和建议动作。
 - **Ecosystem Radar**：展示 EasyClaw 技能调用、信号来源和外部 Agent 社区灵感。
 - **AI Architecture**：用可点击节点解释 Signal Scout、Terrain Cartographer、Skill Forge、Proof Lab、Launch Swarm 的职责。
